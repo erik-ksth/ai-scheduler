@@ -4,5 +4,7 @@
 
 <p>Plan your day in 1 minute! ✨</p>
 
+<p>Try it out here: <a src="https://scheduleyourday.vercel.app/">AI Scheduler</a></p>
+
 ![image](https://github.com/erik-ksth/ai-scheduler/assets/74672970/99db15cb-ee68-46a6-86af-b0a26fbf4626)
 
