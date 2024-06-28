@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </div>
           <div className="md:w-1/2">
-            <div className="flex items-start justify-center w-full px-10">
+            <div className="flex items-start justify-center w-full md:px-10">
               {!response && !loading ? (
                 <div className="text-center">
                   <p>No schedule created yet</p>
