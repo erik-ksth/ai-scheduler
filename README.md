@@ -1,10 +1,10 @@
 <h1>AI Scheduler</h1>
 
-<p>Enter your tasks for the day. This app will generate a productive schedule in detail. ⏰</p>
+- Enter your tasks for the day. This app will generate a productive schedule in detail. ⏰
+- 
+- Plan your day in 1 minute! ✨
 
-<p>Plan your day in 1 minute! ✨</p>
-
-<p>Try it out here: </p><a src="https://scheduleyourday.vercel.app/">AI Scheduler</a>
+Try it out here 👉 [https://scheduleyourday.vercel.app/](AI Scheduler)
 
 ![image](https://github.com/erik-ksth/ai-scheduler/assets/74672970/99db15cb-ee68-46a6-86af-b0a26fbf4626)
 
