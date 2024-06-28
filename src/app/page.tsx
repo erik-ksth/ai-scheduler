@@ -57,7 +57,7 @@ export default function Home() {
     <>
       <main>
         <h1 className="text-center text-4xl font-bold my-10">AI SCHEDULER</h1>
-        <div className="flex min-h-screen flex-col md:flex-row gap-4 items-center p-4 md:p-10">
+        <div className="flex min-h-screen flex-col md:flex-row gap-4 items-center md:items-start p-4 md:p-10">
           <div className=" md:w-1/2 md:h-screen">
             <form onSubmit={handleSubmit} className="text-center">
               <input
@@ -103,7 +103,7 @@ export default function Home() {
                   <l-helix size="45" speed="2.5" color="white"></l-helix>
                 </div>
               ) : (
-                <pre className="text-wrap font-sans">{response}</pre>
+                <div className="whitespace-pre-wrap leading-8" dangerouslySetInnerHTML={{ __html: response }}></div>
               )}
             </div>
           </div>

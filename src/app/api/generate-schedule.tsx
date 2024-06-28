@@ -47,8 +47,10 @@ async function runScheduler(tasks: string[]) {
   });
 
   const result = await chat.sendMessage(`Can you generate a productive day schedule for me? Please write in a clear format. Here are the tasks: ${tasks.join(', ')}`);
-  const response = result.response;
-  return response.text();
+  let response = result.response.text();
+  response = response.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*/g, '').replace(/^## (.*)$/gm, '<strong class="text-xl flex justify-center items-center"> $1 </strong>');
+  console.log("Res: ", response);
+  return response;
 }
 
 export default runScheduler;
