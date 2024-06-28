@@ -14,12 +14,22 @@ export default function Home() {
     }
     return [];
   });
-  const [response, setResponse] = useState<string>("");
+  const [response, setResponse] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      const savedResponse = localStorage.getItem("response");
+      return savedResponse ? savedResponse : "";
+    }
+    return "";
+  });
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
+
+  useEffect(() => {
+    localStorage.setItem("response", response);
+  }, [response]);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
