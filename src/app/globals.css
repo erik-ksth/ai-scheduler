@@ -31,3 +31,23 @@ body {
     text-wrap: balance;
   }
 }
+
+button {
+  border: white 1px solid;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+input {
+  border: white 1px solid;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin: 5px;
+  outline: none
+}

@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <script async type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"></script>
+        {children}
+        </body>
     </html>
   );
 }
